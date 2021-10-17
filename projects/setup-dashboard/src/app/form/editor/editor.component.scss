@@ -1,0 +1,63 @@
+@import '../../styles/colors';
+.tools{
+    color: black;
+    font-size: medium;
+}
+.toolbox{
+    background-color: $blue;
+    color: $white;
+    border: 1px solid $blue;
+    text-align: center;
+}
+.redborder{
+    background-color: $white;
+    box-shadow: 0 3px 6px rgba(82, 82, 82, 0.16), 0 3px 6px rgba(104, 104, 104, 0.23);
+}
+.round{
+    border-radius: 5px;
+}
+.title {
+    border: 0ch;
+    background-color: white;
+    &::after{
+        border: 0ch;
+        background-color: white;
+    }
+  
+}
+.btnsave{
+  
+    box-shadow:none;
+    border: 1px solid $blue;
+    border-radius: 5px;
+    color: $blue;
+    &:hover{
+        background-color: $blue;
+        color: $white;
+
+    }
+}
+.text-gray{
+    color: gray
+}
+.hover{
+    
+    color: $blue;
+    font-weight: 200;
+    &:hover{
+        background-color: $blue;
+        color: $white;
+    }
+}
+.green{
+    color: $green;
+    &:hover{
+        color: darken($color: $green, $amount: 20%);
+    }
+}
+.red{
+    color: $pink;
+    &:hover{
+        color: darken($color: $pink, $amount: 20%);
+    }
+}

@@ -1,0 +1,15 @@
+<div class=" d-flex justify-content-center ">
+  <h3 class="mb-3 pink">Update Entity</h3>
+</div>
+ <form #form = "ngForm" (ngSubmit) = "onClickSubmit(form.value)" >
+<div mat-dialog-content>
+ 
+    
+    <input type="text" nbInput fullWidth status="basic" placeholder="Default" name="name" [(ngModel)]="data.entity.name" required>
+    
+ 
+</div>
+<div mat-dialog-actions class=" d-flex justify-content-end ">
+<button mat-button class="btn edit mx-2 px-4" type="submit">Edit</button>
+</div>
+</form>

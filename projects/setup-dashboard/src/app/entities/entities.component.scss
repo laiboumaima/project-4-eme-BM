@@ -1,0 +1,58 @@
+@import '../styles/colors';
+table {
+    width: 100%;
+  }
+  .card {
+    box-shadow: 0 3px 6px rgba(82, 82, 82, 0.16), 0 3px 6px rgba(104, 104, 104, 0.23);
+  }
+.green{
+    color: $green;
+    &:hover{
+        color: darken($color: $green, $amount: 20%);
+    }
+}
+.red{
+    color: $pink;
+    &:hover{
+        color: darken($color: $pink, $amount: 20%);
+    }
+}
+.right{
+    margin-top: 3%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.addbtn{
+    box-shadow: 0 3px 6px rgba(82, 82, 82, 0.16), 0 3px 6px rgba(104, 104, 104, 0.23);
+    width: 90%;
+      background-color: $white;
+   
+    border-radius: 20px;
+    height:85%;
+    margin-top: 10%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+  
+    
+    mat-icon{
+       
+    
+        color: $blue;
+       
+        
+      
+        transform: scale(4);
+
+    }
+    &:hover{
+        background-color: $blue;
+        color: $white;
+        mat-icon{
+            color: $white;
+         
+        }
+
+    }
+}

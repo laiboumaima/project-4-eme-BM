@@ -1,0 +1,67 @@
+
+<div class="row d-flex justify-content-between mb-1 mx-4" >
+    <mat-form-field class="search-form-field p-0 mt-1" >
+        <input matInput [(ngModel)]="searchKey" placeholder="Search" autocomplete="off" (keyup)="applyFilter()">
+
+    </mat-form-field>
+    <button  mat-fab  (click)="onCreate()" class="btn mb-3">
+        <nb-icon icon="plus"></nb-icon>
+    </button>
+ 
+</div>
+
+<div class="container ">
+<div class=" py-1 card" >
+    <mat-table [dataSource]="dataSource" matSort>
+        <ng-container matColumnDef="username">
+            <mat-header-cell *matHeaderCellDef class="username" mat-sort-header>Username</mat-header-cell>
+            <mat-cell *matCellDef="let element" >{{element.username}}</mat-cell>
+        </ng-container>
+        <ng-container matColumnDef="fullname">
+            <mat-header-cell *matHeaderCellDef class="fullname" mat-sort-header>Fullname</mat-header-cell>
+            <mat-cell *matCellDef="let element" >{{element.fullname}}</mat-cell>
+        </ng-container>
+        <ng-container matColumnDef="email">
+            <mat-header-cell *matHeaderCellDef >Email</mat-header-cell> 
+            <mat-cell *matCellDef="let element" >
+                {{element.email}}
+               
+            </mat-cell>
+        </ng-container>
+       
+        <ng-container matColumnDef="action">
+            <mat-header-cell *matHeaderCellDef ></mat-header-cell>
+            <mat-cell *matCellDef="let row" >
+                <button   class="green btn"  (click)="onedit(row)"> <nb-icon icon="edit"></nb-icon> </button>
+                <button    class="red btn" (click)="Delete(row.id)">
+    
+                  <nb-icon icon="trash-2"></nb-icon>
+                </button>  
+               
+            </mat-cell>
+        </ng-container>
+      
+    
+    
+        <mat-header-row  *matHeaderRowDef="displayedColumns"></mat-header-row>
+        <mat-row *matRowDef="let row; columns:displayedColumns"></mat-row>
+      
+    </mat-table>
+   
+        <div *ngIf="!dataSource.data.length">
+          <div class=" mt-2 d-flex justify-content-center ">
+            No Records Found!
+          </div>
+        </div>
+     
+   <mat-paginator [pageSizeOptions]="[5, 10, 25, 100]" [pageSize]="5" showFirstLastButtons></mat-paginator> 
+
+</div>
+
+
+</div>
+
+
+
+
+

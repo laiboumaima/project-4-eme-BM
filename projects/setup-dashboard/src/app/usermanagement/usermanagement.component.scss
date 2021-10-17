@@ -1,0 +1,50 @@
+@import '../styles/colors';
+.btn{
+    border: 1px solid $blue;
+    color: $blue;
+    background-color: $white;
+    
+    margin-top: 1%;
+
+    text-align: center;
+    &:hover{
+        background-color: $blue;
+        color: $white;
+    }
+
+
+
+}
+
+.green{
+    box-shadow: none;
+    background-color:$white;
+    border: 0ch;
+    color: $green;
+    &:hover{
+        box-shadow: none;
+        background-color:$white;
+        border: 0ch;
+        color: darken($color: $green, $amount: 20%);
+    }
+}
+.card {
+    box-shadow: 0 3px 6px rgba(82, 82, 82, 0.16), 0 3px 6px rgba(104, 104, 104, 0.23);
+  }
+.red{
+    box-shadow: none;
+    background-color:$white;
+    border: 0ch;
+    color: $pink;
+    &:hover{
+        box-shadow: none;
+        background-color:$white;
+        border: 0ch;
+        color: darken($color: $pink, $amount: 20%);
+    }
+}
+
+.border-red{
+    border: 1px solid $red;
+    border-radius: 20px;
+}

@@ -1,0 +1,42 @@
+@import './styles/colors';
+nb-sidebar {
+    background-color: $white;
+    margin: 0%;
+    padding: 0%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.set{
+    background-color: white;
+    nb-icon {
+        color: $gray;
+    }
+    &:hover{
+        background-color: white;
+        nb-icon {
+            color: $blue;
+        }
+    }
+
+}
+.active{
+    background-color: white;
+    nb-icon {
+        color: $blue;
+    }
+}
+nb-layout-header {
+    h5 {
+        color: $red;
+    }
+    .span{
+        color: $blue;
+    }
+  
+}
+.borderred{
+
+    border-right: 2px solid $red;
+    margin: 0%;
+}

@@ -1,0 +1,16 @@
+<div class="container">
+    <div class=" d-flex justify-content-center ">
+        <h3>Create Entity</h3>
+    </div>
+    <div class="m-2">
+        <form class="example-form " #form = "ngForm" (ngSubmit) = "onClickSubmit(form.value)" >
+            <input type="text" nbInput  name ="name" fullWidth status="basic" placeholder="Entity name" ngModel>
+          
+            <div class="d-flex justify-content-end mt-2">
+                <button  type="submit" class="edit btn">create</button> 
+            </div>
+        </form>
+    </div>
+
+
+</div>

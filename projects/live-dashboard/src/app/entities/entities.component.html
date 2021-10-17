@@ -1,0 +1,39 @@
+<div class=" row  mb-3 justify-content-between mx-2 ">
+  
+   <h3>
+{{entity.name}}
+   </h3>   
+  <button mat-fab class="btn btnadd" aria-label="add data"  [routerLink]="[ '/form' ]" >
+    <nb-icon icon="plus-outline"></nb-icon>
+  </button>
+</div>
+<div class="row justify-content-between">
+<div class="col-md-12 col-lg-12 col-sm-12 ">
+  <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+    <ng-container [matColumnDef]="column" *ngFor="let column of displayedColumns">
+      <th mat-header-cell *matHeaderCellDef> {{column}} </th>
+      <td mat-cell *matCellDef="let element"> {{element[column]}}
+        
+        <button   class="green btn" *ngIf="column =='action'"  > <nb-icon icon="edit"></nb-icon> </button>
+        <button mat-icon-button *ngIf="column =='action'" class="red btn" (click)="Delete(element.id)">    <nb-icon icon="trash-2"></nb-icon></button>  
+      </td>
+      
+    </ng-container>
+    <tr class="mat-row" *matNoDataRow>
+      <td class="mat-cell" colspan="9999">
+        No data 
+      </td>
+    </tr>
+    <tr mat-header-row *matHeaderRowDef="columnsToDisplay"></tr>
+    <tr mat-row *matRowDef="let row; columns: columnsToDisplay;"></tr>
+  </table>
+   
+      
+  <mat-paginator [pageSizeOptions]="[5, 10, 20]" [pageSize]="8" showFirstLastButtons></mat-paginator>
+      
+</div>
+
+</div>
+<div>
+
+</div>

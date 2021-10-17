@@ -1,0 +1,32 @@
+<div class=" container-fluid">
+  <div class="row end mx-2">
+    <div class="mt-1">
+      <h4>entity name</h4>
+    </div>
+    <div class=" mb-3  ">
+      <button mat-fab class="btn btnadd" aria-label="Create template" [routerLink]="['create']">
+        <mat-icon>add</mat-icon>
+      </button>
+    </div>
+  </div>
+</div>
+<div class="row  justify-content-around ">
+
+  <div 
+    *ngFor="let item of items;" class="card col-3 m-1 mt-3  " routerLink= ''>
+
+    <div class="row overlay d-flex justify-content-center mt-3 p-3">
+      <h5 class=" text-center h5 ">{{item.name}}</h5>
+    </div>
+
+    <div class="row right">
+      <button    class="red btn" (click)="Delete(item.id)">
+    
+        <nb-icon icon="trash-2"></nb-icon>
+      </button>  
+     
+
+    </div>
+  </div>
+
+</div>

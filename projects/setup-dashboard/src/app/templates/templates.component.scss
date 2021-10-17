@@ -1,0 +1,77 @@
+@import '../styles/colors';
+.btnadd {
+    background-color:$white;
+    color: $blue;
+    border: 1px solid $blue;
+  
+  &:hover{
+    background-color:$blue;
+    color: $white;
+
+  }
+}
+
+ h5{
+ 
+  &:nth-child(2n){
+    color: $blue;
+  }
+
+  &:nth-child(n+1){
+    color: $pink;
+  }
+ 
+  &:hover{
+    color: $white;
+  }
+
+}
+
+
+.end{
+    display: flex; 
+    justify-content: space-between;
+}
+h4{
+    color: $blue;
+}
+.red{
+  color:$white;
+  box-shadow: none;
+ &:hover{
+      color: $white;
+      box-shadow: none;
+
+  }
+}
+.right{
+  display: flex;
+  justify-content: flex-end;
+}
+.green{
+  color: $white;
+  &:hover{
+      color: darken($color: $green, $amount: 10%)
+  }
+}
+.card{
+ 
+  width: 30%;
+  box-shadow:  0 0 0.5em rgb(173, 173, 173);
+  cursor: pointer;
+ 
+}
+.card:hover{
+  color: white;
+
+  &:nth-child(n+1){
+    background-color: $pink;
+  }
+  &:nth-child(2n){
+    background-color: $blue;
+  }
+ h5{
+   color: $white;
+ }
+
+}

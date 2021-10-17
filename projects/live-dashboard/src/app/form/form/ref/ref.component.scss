@@ -1,0 +1,9 @@
+@import '../../../styles/colors';
+.btn{
+    color: $white;
+    background-color: $blue;
+    &:hover{
+        color: $blue;
+    background-color: $white;
+    }
+}

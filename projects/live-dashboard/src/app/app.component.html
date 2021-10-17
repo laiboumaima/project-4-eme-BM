@@ -1,0 +1,42 @@
+<nb-layout >
+
+  <nb-layout-header >
+      <div class="container-fluid d-flex justify-content-between " >
+        <div class=" row ">
+          <h5 class="mr-2 ml-1 mt-2 span">Busniness manager</h5>
+          <h5 class="ml-5 mt-2 h5">{{title}}</h5>
+        </div>
+          
+        <div class=" row m-0 mt-1 p-0">
+    
+          
+          <div class="mr-3" style="cursor: pointer;" routerLink="settings">
+            <nb-user size="medium" name="Oumaima laib" title="oumaima laib"
+            onlyPicture
+            picture="https://d30y9cdsu7xlg0.cloudfront.net/png/138926-200.png">
+            </nb-user>
+          </div>
+          <div class="mt-2">
+            <nb-toggle ></nb-toggle>
+          </div>
+         
+        </div>
+    
+      </div>
+  </nb-layout-header>
+  <nb-sidebar  responsive="true">
+     
+      <app-sidebar></app-sidebar>
+     
+  </nb-sidebar>
+  <nb-layout-column class="">
+
+
+
+      <router-outlet></router-outlet>
+
+  </nb-layout-column>
+
+
+
+</nb-layout>

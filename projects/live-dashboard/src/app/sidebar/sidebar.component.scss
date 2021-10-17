@@ -1,0 +1,25 @@
+
+@import '../styles/colors';
+.items{
+   
+    text-decoration: none;
+ border: 0;
+    color: 	#222b45e7;
+    font-size: 0.9rem;
+    font-weight: 600;
+    nb-icon{
+        color: #8f9bb3;
+    } 
+    &:hover{
+        color: $blue;
+        nb-icon{
+            color: $blue;
+        } 
+    }
+}
+.active{
+  p{color: $blue;}
+    nb-icon{
+        color: $blue;
+    } 
+}

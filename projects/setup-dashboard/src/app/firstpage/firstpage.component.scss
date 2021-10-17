@@ -1,0 +1,29 @@
+@import '../styles/colors';
+.red{
+    background-color: $red ;
+    border: 1px solid $red;
+   h5,h1{
+    color: $white;
+   } 
+    
+}
+.simple{
+    h1{
+        color : $blue;
+    }
+}
+nb-icon {
+    margin-right: 2%; font-size: 2rem;
+color: $blue;
+
+}
+.pink{
+    color: $pink;
+}
+.blue{
+    color: $blue;
+}
+nb-icon .pink { margin-right: 2%;
+    color: $pink;
+    
+    }
