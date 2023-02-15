@@ -30,14 +30,19 @@ Setup Dashboard
 
 ![image](https://user-images.githubusercontent.com/82281597/219099077-a01f185e-f802-446b-bf2a-6c3e7dc917f2.png)
 Live Dashboard
+
 ![image](https://user-images.githubusercontent.com/82281597/219099244-0c328ec1-9e1a-4864-ab9b-3c5b4aa6c3b2.png)
 The interface for adding an entity
+
 ![image](https://user-images.githubusercontent.com/82281597/219099376-bfc78afe-2be0-4d33-9900-661256a8a114.png)
 The interface to create a Template
+
 ![image](https://user-images.githubusercontent.com/82281597/219099486-80259363-6da7-4072-b87f-0874b725ee70.png)
 User interface
+
 ![image](https://user-images.githubusercontent.com/82281597/219099564-d720be87-4546-44f2-805e-b411ace8d656.png)
 Settings Interface
+
 ![image](https://user-images.githubusercontent.com/82281597/219099746-e3312cc4-32b9-477f-addd-22b6826396de.png)
 
 
