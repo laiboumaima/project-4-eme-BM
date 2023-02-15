@@ -27,6 +27,7 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
 ## interFace
 Setup Dashboard
+
 ![image](https://user-images.githubusercontent.com/82281597/219099077-a01f185e-f802-446b-bf2a-6c3e7dc917f2.png)
 Live Dashboard
 ![image](https://user-images.githubusercontent.com/82281597/219099244-0c328ec1-9e1a-4864-ab9b-3c5b4aa6c3b2.png)
